@@ -6,6 +6,6 @@ public class Lv6ButtonScript: MonoBehaviour
     public void OnClickStartButton()
     {
         // �V�[���ڍs
-        SceneManager.LoadScene("Lv.6");
+        SceneManager.LoadScene("stage6");
     }
 }
