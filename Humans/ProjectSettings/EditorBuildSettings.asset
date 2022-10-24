@@ -6,12 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/NAO/Title.unity
+    path: Assets/NAO/Scene/Basic Scene/Title.unity
     guid: f61a8d557db3fb149aa6c5591221b4ef
   - enabled: 1
-    path: Assets/NAO/Start.unity
+    path: Assets/NAO/Scene/Basic Scene/Start.unity
     guid: 9fcac9c9f4737e04fa0faf5e6fc64bc0
   - enabled: 1
-    path: Assets/NAO/Clear.unity
+    path: Assets/NAO/Scene/Stage Scene/Lv.2.unity
+    guid: 5c59887a6022b46bbb6926b6ed55b44c
+  - enabled: 1
+    path: Assets/NAO/Scene/Basic Scene/Clear.unity
     guid: 9ffc6c05df3374c60805cf15a6e4a29c
   m_configObjects: {}
