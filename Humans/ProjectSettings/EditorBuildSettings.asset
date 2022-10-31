@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/NAO/Scenes/Basic Scenes/Title.unity
     guid: f61a8d557db3fb149aa6c5591221b4ef
   - enabled: 1
+    path: Assets/NAO/Scenes/Basic Scenes/Rule.unity
+    guid: 8f592a8738bb8864b9d9d0a9bde235e0
+  - enabled: 1
+    path: Assets/NAO/Scenes/Basic Scenes/Rule1.unity
+    guid: 89466342b2e9932469329455ca8b4b5a
+  - enabled: 1
+    path: Assets/NAO/Scenes/Basic Scenes/Rule2.unity
+    guid: 3b579454e9eef4b4985f07a253d46af1
+  - enabled: 1
     path: Assets/NAO/Scenes/Basic Scenes/Start.unity
     guid: 9fcac9c9f4737e04fa0faf5e6fc64bc0
   - enabled: 1
