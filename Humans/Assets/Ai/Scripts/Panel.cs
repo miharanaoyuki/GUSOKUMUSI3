@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Panel : MonoBehaviour
 {
+    private string S_Text;
     bool on_Flag = true;//上にあるかどうか
     bool select_flag = true;//クリックされたかどうか
 
@@ -12,7 +14,7 @@ public class Panel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        S_Text = P_num.ToString();
     }
 
     // Update is called once per frame
@@ -60,6 +62,7 @@ public class Panel : MonoBehaviour
         //"Stage"のタグを探す
         if(collision.gameObject.CompareTag("Stage"))
         {
+            //位置情報を取得、合わせる(代入させる感じで？)
 
         }
     }
