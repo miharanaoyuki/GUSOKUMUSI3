@@ -5,16 +5,17 @@ using UnityEngine.UI;
 
 public class Panel : MonoBehaviour
 {
-    private string S_Text;
+    private Text pieceText;//テキスト
+    private string S_Text;//文字列
     bool on_Flag = true;//上にあるかどうか
     bool select_flag = true;//クリックされたかどうか
-
-    public int P_num; //手駒用の変数
-
+    public int P_num = 0; //手駒用の変数
     // Start is called before the first frame update
     void Start()
     {
+        this.pieceText = GetComponentInChildren<Text>();
         S_Text = P_num.ToString();
+        pieceText.text = S_Text;
     }
 
     // Update is called once per frame
@@ -40,7 +41,8 @@ public class Panel : MonoBehaviour
 
     void OnMouseDrag()
     {
-        if (select_flag== false)
+        //押されているとき+マウスがオブジェクトの上にある時
+        if (!select_flag)
         {
 
             Vector3 objectPointInScreen
