@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 466088106}
   - component: {fileID: 466088108}
   - component: {fileID: 466088107}
+  - component: {fileID: 466088109}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -193,7 +194,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: 
 --- !u!222 &466088108
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -202,6 +203,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 466088105}
   m_CullTransparentMesh: 1
+--- !u!114 &466088109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466088105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcc16fb24f313fe42b0412ca7e8d37a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Number: 2
 --- !u!1 &537662131
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,8 +413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc16fb24f313fe42b0412ca7e8d37a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Number: 0
-  ChangeNumber: 0
+  Number: 2
 --- !u!58 &1036845180
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -579,7 +592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b9febb925200d9468e0f95db1ebec9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  P_num: 3
+  P_num: -2
 --- !u!58 &1540508036
 CircleCollider2D:
   m_ObjectHideFlags: 0
