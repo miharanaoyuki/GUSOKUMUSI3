@@ -5,23 +5,30 @@ using UnityEngine.UI;
 
 public class StagePiece : MonoBehaviour
 {
+    //Panel.cs関連----------------------------------------
+    GameObject g_object;
     Panel PanelScript;//Panel.csのpublic関数を読み取り
-    Text stageText;
-    private string N_string;
+    private int pNumber = 0;//代入
+    //----------------------------------------------------
+    Text stageText;//テキスト
+    private string N_string;//文字列
+    private int ChangeNumber = 0;//計算結果代入用
     public int Number = 0;//配置したのに変数を割り当てる用
-    private int ChangeNumber = 0;
     bool Select = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        PanelScript = gameObject.GetComponent<Panel>();
         //子オブジェクトのテキストを参照
         this.stageText = GetComponentInChildren<Text>();
+        //Panel.cs
+        g_object = GameObject.Find("Piece");
+        PanelScript = g_object.GetComponent<Panel>();
         N_string = Number.ToString();
         stageText.text = N_string;
-        Debug.Log("最初のステージの数字：" + Number);
         ChangeNumber = Number;
+        
+        Debug.Log("最初のステージの数字：" + Number);
     }
 
     // Update is called once per frame
@@ -34,8 +41,10 @@ public class StagePiece : MonoBehaviour
             //マウスの左ボタンが離されたら
             if (Input.GetMouseButtonUp(0))
             {
+                //スクリプトから情報を読み取って代入させる
+                pNumber = PanelScript.P_num;
                 //判定があったら計算させる
-                ChangeNumber = Number + PanelScript.P_num;
+                ChangeNumber = Number + pNumber;
                 N_string = ChangeNumber.ToString();
                 stageText.text = N_string;
 

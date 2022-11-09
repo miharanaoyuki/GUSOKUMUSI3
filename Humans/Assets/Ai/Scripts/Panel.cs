@@ -10,6 +10,7 @@ public class Panel : MonoBehaviour
     bool on_Flag = true;//上にあるかどうか
     bool select_flag = true;//クリックされたかどうか
     public int P_num = 0; //手駒用の変数
+    int pNum = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +34,12 @@ public class Panel : MonoBehaviour
             on_Flag = true;
         }
     }
-
+    public void Plus()
+    {
+        //StagePiece.csに読み込ませる用
+        //pNum = P_num;
+        Debug.Log("Access!!");
+    }
     void OnMouseEnter()
     {
         on_Flag = false;
